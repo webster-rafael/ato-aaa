@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 //  Nodemailer
 
-require('dotenv').config({ path: 'senha.env' });
+require('dotenv').config({ path: 'dados.env' });
 
 
 const transporter = nodemailer.createTransport({
@@ -25,8 +25,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'webster.dev2024@gmail.com',
-        pass: 'mkuy xkar twzu nptz'
+        user: process.env.EMAIL,
+        pass: process.env.SENHA
     }
 });
 
@@ -45,7 +45,7 @@ app.post('/enviar-email', upload.single('Documento'), (req, res) => {
     // Configurar o e-mail
     const mailOptions = {
         from: 'seu-email@example.com',
-        to: 'webster.dev2024@gmail.com', // Substitua pelo e-mail do destinatário
+        to: 'institutoatodeamoranimal@gmail.com', // Substitua pelo e-mail do destinatário
         subject: 'Novo Formulário Recebido',
         text: `Nome: ${Name}\nEmail: ${Email}\nAdotar: ${Adotar}`,
         attachments: [
