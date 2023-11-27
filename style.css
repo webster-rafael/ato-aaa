@@ -1781,6 +1781,27 @@ input[type="file"]
   font-size: 18px;
 } 
 
+@media (min-width: 801px) and (max-width: 900px)
+{
+  .profilePic .circle{
+    background-color: #A36A4F;
+    position: absolute;
+    left: 44%;
+    bottom: 44%;
+}
+}
+
+
+@media (max-width: 800px)
+{
+  .profilePic .circle{
+    background-color: #A36A4F;
+    position: absolute;
+    left: 44%;
+    bottom: 44%;
+}
+}
+
 .bottomm form input{
   border: none;
   outline: 0;
