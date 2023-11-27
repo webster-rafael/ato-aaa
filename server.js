@@ -40,17 +40,17 @@ app.use(bodyParser.json());
 
 // Rota para lidar com o formulário
 app.post('/enviar-email', upload.single('Documento'), (req, res) => {
-    const { Name, Email, Adotar } = req.body;
+    const { Name, Email, Tel, Adotar } = req.body;
 
     // Configurar o e-mail
     const mailOptions = {
         from: 'seu-email@example.com',
         to: 'institutoatodeamoranimal@gmail.com', // Substitua pelo e-mail do destinatário
         subject: 'Novo Formulário Recebido',
-        text: `Nome: ${Name}\nEmail: ${Email}\nAdotar: ${Adotar}`,
+        text: `Nome: ${Name}\nEmail: ${Email}\nTelefone: ${Tel}\nAdotar: ${Adotar}`,
         attachments: [
             {
-                filename: 'documento.jpg', // Nome do arquivo no e-mail
+                filename: 'Pet Selecionado.jpg', // Nome do arquivo no e-mail
                 content: req.file.buffer, // Dados binários da imagem
                 encoding: 'base64'
             }

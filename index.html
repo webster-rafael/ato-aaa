@@ -1078,46 +1078,74 @@
 
 <!-- ================ Formulário ==================== -->
 
-<section id="formulario-main">
-  <div class="formulario">
-    <h1>Formulário</h1>
-    <form action="https://ato-amor-animal.vercel.app/enviar-email" method="POST" enctype="multipart/form-data">
-        <!-- Seus campos de formulário -->
-  
-        <input type="text" name="Name" placeholder="Nome Completo" required>
-        <input type="email" name="Email" placeholder="Email" required>
-        <input type="file" name="Documento" id="file" accept="image/*">
-        <p>Selecione seu documento de identificação CNH/RG</p>
-        <label for="file" id="label-file">
-            <p>Carregar Documento <ion-icon name="images-outline"></ion-icon></p>
+<div class="form-donation">
+  <i class="paw fa fa-paw"></i>
+  <div class="wrapper">
+      <div class="top">
+          <span>QUERO</span>
+          <img src="./image/dog.webp" alt="">
+          <span>ADOTAR</span>
+      </div>
+      <div class="bottomm">
+          <div class="triangle"></div>
+          <form action="https://ato-amor-animal.vercel.app/enviar-email" method="POST" enctype="multipart/form-data">
+
+            <input type="text" name="Name" placeholder="Digite seu Nome" required>
+            <input type="email" name="Email" placeholder="Digite seu E-mail" required>
+            <input type="text" name="Tel" placeholder="Digite seu Telefone" required>
             
-        </label>
-        <label for="Adotar" id="label-porte"><p>Pets para Adoção:</p><select name="Adotar">
-            <option>Selecione um Pet</option>
-            <option>Jhenny</option>
-            <option>Cigana</option>
-            <option>Kiara</option>
-            <option>Rubi</option>
-            <option>Esperança</option>
-            <option>Nega</option>
-            <option>Marry</option>
-            <option>Livia</option>
-            <option>Filhote</option>
-            <option>Shitaraa</option>
-            <option>Agina</option>
-            <option>Lili Caramelo</option>
-            <option>Baby</option>
-            <option>Florinda</option>
-            <option>Yana</option>
-            <option>Narcisa</option>
-  
-        </label>
-        </select>
-        <button type="submit" class="button-form">Enviar</button>
-  
-    </form>
+              
+                <input type="file" name="Documento" id="file" accept="image/*" required>
+                
+                  <h6>Selecione um Documento RG/CNH</h6>
+                
+                <label for="file" id="label-file">
+                  <div class="profilePic">
+                      <i class="fa-solid fa-file-image"></i>
+                    <div class="circle">
+                      <i class="fa fa-user"></i>
+                    </div>
+                
+                  </div>
+                </label>
+                
+              
+              
+              <label for="Adotar" id="label-porte"><h6>Pets para doação</h6>
+                <select name="Adotar" >
+                <option>Selecione um Pet</option>
+                <option>Jhenny</option>
+                <option>Cigana</option>
+                <option>Kiara</option>
+                <option>Rubi</option>
+                <option>Esperança</option>
+                <option>Nega</option>
+                <option>Marry</option>
+                <option>Livia</option>
+                <option>Filhote</option>
+                <option>Shitaraa</option>
+                <option>Agina</option>
+                <option>Lili Caramelo</option>
+                <option>Baby</option>
+                <option>Florinda</option>
+                <option>Yana</option>
+                <option>Narcisa</option>
+      
+            </label>
+            
+            </select>
+                         
+              <div class="singUp">
+                  <button type="submit">
+                      Cadastrar-se
+                      <i class="fa fa-paw"></i>
+                  </button>
+              </div>
+          </form>
+      </div>
   </div>
-</section>
+  <i class="paw fa fa-paw"></i>
+</div>
 
 
         
