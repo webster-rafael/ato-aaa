@@ -61,10 +61,10 @@ app.post('/enviar-email', upload.single('Documento'), (req, res) => {
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error(error);
-            res.redirect('https://webster-rafael.github.io/ato-amor-animal/email-error.html'); // redireciona pra pagina de erro
+            res.redirect('https://ato-de-amor-animal.vercel.app/email-error.html'); // redireciona pra pagina de erro
         } else {
             console.log('E-mail enviado: ' + info.response);
-            res.redirect('https://webster-rafael.github.io/ato-amor-animal/email-sucess.html'); // redireciona pra pagina de sucesso
+            res.redirect('https://ato-de-amor-animal.vercel.app/email-sucess.html'); // redireciona pra pagina de sucesso
         }
     });
 });
