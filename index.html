@@ -20,86 +20,46 @@
     <title>Ato de amor animal</title>
 </head>
 <body>
-    <div class="menu" onclick="toogleMenu">
-        <header class="header-1">
-            <nav>
-                <ul class="lista__home">
-                <li class="lista__item"><a href="">home</a></li>
-                <li class="lista__item"><a href="">contato</a></li>
-                <li class="lista__item"><a href="">doação</a></li>
-                <li class="lista__item"><a href="">cachorros</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="logo__svg">
-            <img src="./image/logo-ong.png">
-            </div>
-        <header class="header-2">
-
-            <nav>
-                <ul class="lista__home">
-                    <li class="lista__item"><a href="">Voluntários</a></li>
-                    <li class="lista__item"><a href="">Adotar</a></li>
-                    <li class="lista__item"><a href="">Parceiro</a></li>
-                    <li class="lista__item"><a href="">Gatos</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-
-    <!-- =============== nav mobile ==================== -->
-
-    <nav class="navbar">
-              <div class="links">
-              <ul class="menuu">
-                <li class="lista__item"><a href="">home</a></li>
-                <li class="lista__item"><a href="">contato</a></li>
-                <li class="lista__item"><a href="">doação</a></li>
-                <li class="lista__item"><a href="">cachorros</a></li>
-                <li class="lista__item"><a href="">Voluntários</a></li>
-                <li class="lista__item"><a href="">Adotar</a></li>
-                <li class="lista__item"><a href="">Parceiro</a></li>
-                <li class="lista__item"><a href="">Gatos</a></li>
-              </ul>
-              </div>
-              <div class="menu-btn">
-                  <i class="fas fa-bars"></i>
-              </div>
-          </div>
-      </div>
-  </nav>
-
-    <!-- ===============fim nav mobile ================ -->
-
-    
     <main>
-        <section class="interface">
-            <div class="titulo">
-                <h1>Olá, Eu sou o <br> <span>DUCK</span> <br> me leva <br> pra casa ?</h1>
-            </div>
-            <div class="banner__dog">
-                <img src="./image/dogdm.png">
-            </div>
-            <div class="icons">
-                <div class="container">
-                    <i class="fa-solid fa-heart-circle-plus" style="color: #ffffff;"></i><button class="botão_1"><a href="#" class="botão__texto">QUERO <br>ADOTAR</a></button>
-                    </div>
-    
-                    <div class="container">
-                    <i class="fa-solid fa-house-medical" style="color: #ffffff;"></i><button class="botão_1"><a href="#" class="botão__texto">QUERO <br>AJUDAR</a></button>
-                </div>
-    
-                <div class="container">
-                    <i class="fas fa-hand-holding-heart" style="color: #ffffff;"></i><button class="botão_1"><a href="#" class="botão__texto">QUERO <br>DOAR</a></button>
-                </div>
-            </div>
-            <div class="custom-shape-divider-bottom-1700353594">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            </section> 
+      <section class="interface">
+        <div class="descricao">
+          <h1 class="titulo">
+            <span class="gradient-text">Você não pode comprar amor,</span> mas pode adotar!
+          </h1>
+          <p class="paragrafo">
+            Ter um animal de estimação traz benefícios para a saúde física e mental. É uma troca de amor e carinho que faz bem pra todo mundo. Leve um para casa: cuide dele e deixe que ele cuide de você também.
+          </p>
+        </div>
+  
+        <div class="users-color-container">
+          <span class="item" style="--i: 1"></span>
+          <img
+            class="itemm"
+            src="./image/ong-22.jpg"
+            style="--i: 2"
+            alt="" />
+          <span class="itemm" style="--i: 3"></span>
+          <img
+            class="itemm"
+            src="./image/ong-25.jpg"
+            style="--i: 4"
+            alt="" />
+  
+          <img
+            class="itemm"
+            src="./image/ong-34.jpg"
+            style="--i: 10"
+            alt="" />
+          <span class="itemm" style="--i: 11"></span>
+          <img class="itemm" src="./image/ong-26.jpg" style="--i: 12" alt="" />
+          <span class="itemm" style="--i: 5"></span>
+  
+          <span class="itemm" style="--i: 9"></span>
+          <img class="itemm" src="./image/ong-21.jpg" style="--i: 8" alt="" />
+          <span class="itemm" style="--i: 7"></span>
+          <img class="itemm" src="./image/ong-28.jpg" style="--i: 6" alt="" />
+        </div>
+      </section> 
             
             <section class="service-area text-center">
               <img src="image/heart-icon1.png" alt="" class="heart-icon heart-icon-1"/>
@@ -1096,7 +1056,7 @@
           <div class="triangle"></div>
           <form action="https://ato-amor-animal.vercel.app/enviar-email" method="POST" enctype="multipart/form-data">
 
-            <input type="text" name="Name" placeholder="Digite seu Nome" required>
+            <input class="name" type="text" name="Name" placeholder="Digite seu Nome" required>
             <input type="email" name="Email" placeholder="Digite seu E-mail" required>
             <input type="text" name="Tel" placeholder="Digite seu Telefone" required>
             
@@ -1144,7 +1104,7 @@
               <div class="singUp">
                   <button type="submit">
                       Cadastrar-se
-                      <i class="fa fa-paw"></i>
+                      
                   </button>
               </div>
           </form>
