@@ -58,7 +58,7 @@ function scrollActive()
    Section.forEach(current => {
        const sectionHeight = current.offsetHeight
        const sectionTop = current.offsetTop - 50;
-       sectionId = current.getAttribute('id')
+       Section = current.getAttribute('id')
        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
        {
            document.querySelector('.links a[href*=' + sectionId + ']').classList.add('active')
@@ -68,4 +68,33 @@ function scrollActive()
          document.querySelector('.links a[href*=' + sectionId + ']').classList.remove('active')
        }
    })
+}
+
+// ===================== button ver mais ====================
+
+var btn = document.querySelector('#show-hide');
+var cards = document.getElementsByClassName('cards-visible');
+
+// Ocultar as divs iniciais
+for (var i = 0; i < cards.length; i++) {
+  cards[i].style.display = 'none';
+}
+
+function toggleVisibility() {
+  for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+
+    if (card.style.display === 'flex' || card.style.display === '') {
+      card.style.display = 'none';
+    } else {
+      card.style.display = 'flex';
+    }
+  }
+
+  // Atualizar o texto do botão
+  if (btn.innerText === 'Mostrar Mais') {
+    btn.innerText = 'Mostrar Menos';
+  } else {
+    btn.innerText = 'Mostrar Mais';
+  }
 }

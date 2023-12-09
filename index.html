@@ -18,6 +18,13 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Ato de amor animal</title>
+
+    <style>
+      .cards-visible 
+{
+  display: none;
+}
+    </style>
 </head>
 <body>
     <main>
@@ -41,7 +48,7 @@
         </div>
   
         <div class="users-color-container">
-          <span class="itemm" style="--i: 1"></span>
+          <span class="item" style="--i: 1"></span>
           <img
             class="itemm"
             src="./image/ong-22.jpg"
@@ -273,7 +280,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-37.jpg" />
               <div class="title">
                 <h2>NEGA</h2>
@@ -288,7 +295,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/MARRY.jpeg" />
               <div class="title">
                 <h2>MARRY</h2>
@@ -303,7 +310,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-03.jpg" />
               <div class="title">
                 <h2>LIVIA</h2>
@@ -318,7 +325,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-11.jpg" />
               <div class="title">
                 <h2>FILHOTE</h2>
@@ -333,7 +340,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-30.jpg" />
               <div class="title">
                 <h2>SHITARA</h2>
@@ -348,7 +355,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-38.jpg" />
               <div class="title">
                 <h2>ÁGINA</h2>
@@ -363,7 +370,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-40.jpg" />
               <div class="title">
                 <h2>LILI CARAMELO</h2>
@@ -378,7 +385,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/ong-34.jpg" />
               <div class="title">
                 <h2>BABY</h2>
@@ -393,7 +400,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/FLORINDA.jpeg" />
               <div class="title">
                 <h2>FLORINDA</h2>
@@ -408,7 +415,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/YANA.jpeg" />
               <div class="title">
                 <h2>YANA</h2>
@@ -423,7 +430,7 @@
               </div>
             </div>
       
-            <div class="cardd">
+            <div class="cardd cards-visible">
               <img class="cardd-img" src="./image/NARCISA.jpeg" />
               <div class="title">
                 <h2>NARCISA</h2>
@@ -953,8 +960,14 @@
                   <button class="button close-btn modal-close">Close</button>
                 </div>
               </div>
+            </div>   
             </div>
+
+            
           </section>
+          <div class="ver-mais"> 
+            <button id="show-hide" onclick="toggleVisibility()">Mostrar Mais</button>
+          </div>
         </main>
 
 
