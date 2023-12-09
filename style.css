@@ -1260,6 +1260,11 @@ nav {
     .modal-content {
       width: 80%;
     }
+
+    .ver-mais 
+    {
+      margin-top: 1px;
+    }
   
     footer {
       padding: 20px 80px 60px;
