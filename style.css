@@ -1809,7 +1809,9 @@ select {
 }
 @media (max-width: 441px) {
   .top span {
-      display: none;
+    font-size: 20px;
+  font-weight: 500;
+      
   }
   .singUp  {
      flex-direction: column-reverse;
