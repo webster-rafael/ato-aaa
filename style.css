@@ -491,7 +491,7 @@ nav {
     color: #fe7519;
 }
 
-@media (max-width: 899px) 
+@media (max-width: 699px) 
 {
     .sobre 
     {
@@ -515,17 +515,18 @@ nav {
     .sobre-titulo h1 {
         font-size: 1.8rem;
         text-align: center;
+        margin-top: -40px;
     }
     
     .sobre-titulo p {
-        width: 60%;
+        width: 70%;
         font-size: 0.8rem;
         text-align: center;
     }
     
     .sobre-titulo a {
         font-size: 2.0rem;
-        margin-top: 40px;
+        margin-top: 20px;
         display: inline;
         transition: transform 0.3s ease;
     }
