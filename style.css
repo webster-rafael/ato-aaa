@@ -81,9 +81,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-.nav-button > button 
+.nav-button > .buttonn a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-button > button
 {
   width: 70px;
   height: 40px;
@@ -1442,6 +1449,16 @@ nav {
   transition-delay: .1s
 }
 
+.help-them__icon span > a
+{
+  color: #15c8a0;
+}
+
+.help-them__icon span > a:hover
+{
+  color: yellowgreen;
+}
+
 .help-them__single:hover .help-them__icon span {
   transform: rotate(1turn)
 }
@@ -1524,6 +1541,11 @@ nav {
 
 
 /* ================== Formulário ==================== */
+
+.form-section
+{
+  height: 100%;
+}
 
 .form-donation
 {
@@ -1780,14 +1802,27 @@ select {
   cursor: pointer;
 }
 
+@media (min-width: 1300px)
+{
+  .form-donation
+  {
+    height: 60vh;
+  }
+}
 
-@media (max-width: 1200px) {
+
+@media (max-width: 1299px) {
   .wrapper{
-      width: 70%;
+      width: 50%;
   }
 
   .form-donation .paw{
       display: none;
+  }
+
+  .form-donation
+  {
+    height: 100%;
   }
 }
 
